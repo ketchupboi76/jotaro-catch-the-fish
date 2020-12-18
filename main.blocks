@@ -1,0 +1,156 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="PVLxd[O)S;0?B83{Jv9[">Player</variable><variable type="KIND_SpriteKind" id="d^9,u1=#?ts[aV/VcxA%">Projectile</variable><variable type="KIND_SpriteKind" id="aJI*t?e;IR+cU1mnPhwo">Food</variable><variable type="KIND_SpriteKind" id="R~?1[Y6Vn2H~ST~d{Y}x">Enemy</variable><variable id="%RvY!p}onn-X(0tp|US:">mySprite</variable><variable id="lK3f+?U[q=)9CV-8SfZV">Fish</variable><variable id="*Z!!4svRF73i/a4VE%*n">picture</variable></variables><block type="pxt-on-start" id="R1|:jl).JkO|AEUaj2BQ" x="190" y="0"><statement name="HANDLER"><block type="gamesetbackgroundimage" id="=!IWq+N.Mf~_`R63#Lf$"><value name="img"><shadow type="background_image_picker" id="YKNTew(E]GYWf!P0iECQ"><field name="img">img`
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccccfffffffffffffffffffffffffffcccccfffccccccccccccccccccccccccccccccccffffccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffffffffffffffffffffcccccccccccccccccccccccffffffcccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccfffffffffffffffffffffffffffffffffffffffffffffffffffffccccccccccccccccccfffffffcccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccffffffff8888888888888888888888fffffffffffffffffffffffffffccccccccccfffffffffffcccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccfffffff8888888888888888888888888888888888888888888fffffffffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccfffffff88888888888888888888888888888888888888888888888ffffffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfffffff888888888888888888888888888888888888888888888888ffffffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfffff88888888888888888888888888888888888888888888888888fffffffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccffff8888888888888888885555555888888888888888888888888888ffffffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfff888555555888888888555555555888888888888888888888888888fffffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfff5555555558888888855555555555888888888888888888888888888fffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfff55555555558888885555555555555888888888888888888888888888fffffffffffffffffffffccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfff5555555555888888555555555555588888888888888888888888888ffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccfff555555555588888855555555555558888888888888888888888888ffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccffff555555555588888855555555555558888888888888888888888888fffffffffffffffffffffffccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccfff5555555555588888855555555555558888888888888888888888888ffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccfff5555555555588888885555555555588888888888888888888888888ffffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccffff5555555555588888885555555555588888885555588888888888888fffffffffffffffffffffffffffccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccfffff5555555555555555555555555555888888885555555888888888888fffffffffffffffffffffffffffffccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccffffff8555555555555555555555555555555555555555555558888888888888fffffffffffffffffffffffffffffccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccffffffffffffff855555555555555555555555555555555555555555555588888888888888ffffffffffffffffffffffffffffcccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccffffffffffffff88888888888888888888888855555555555555555555555888888888888888ffffffffffffffffffffffffffffccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccfffffffffffff88888888888888888888888888888888888888555555555558888888888888888fffffffffffffffffffffffffffccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccffffff8888888888888888888888888888888888888888888888885555555558888888888888888ffffffffffffffffffffffffffffcccccccccccccccccccccccccccccc
+cccccccccccccccccccccccfffff88888888888888888888888888888888888888888888888888555555588888888888888888ffffffffffffffffffffffffffffcccccccccccccccccccccccccccccc
+cccccccccccccccccccccccffff888888888888888888888888888888888888888888888888888885555888888888888888888fffffffffffffffffffffffffffffccccccccccccccccccccccccccccc
+cccccccccccccccccccccccfffff8888888888888888888888888888888888888888888888888888888888888888888888888ffffffffffffffffffffffffffffffccccccccccccccccccccccccccccc
+cccccccccccccccccccccccffffff88888888888888888888888888888888888888888888888888888888888888888888888fffffffffffffffffffffffffffffffccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccffffffffff888888888888888888888888888888888888888888888888888888888888888888ffffffffffffffffffffffffffffffffcccccccccccccccccccccccccccc
+cccccccccccccccccccccccccffffffffffffffffff888888888888888888888888888888fffffffff8888888888888888ffffffffffffffffffffffffffffffffffcccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccffffffffffffffffffffffff888888888888888888888fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffccccfffffffcccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffffffdddddfffffffffffffffffffffffddffffffffffffffffccccccfffffcccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccfffffffffffffffffffffffffffffddddddddddddddddddfffffddffffddffffffffffffffffcccccccffffcccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccfffdddddddddddddddddddddddddddddddddddddddddddddddddddffffddddddfffffffffffffcccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccffffddddddddddddddddddddddddddddddddddddddddddddddddddffffdddddddfffffffffffffccccccccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccffffddddddddddddddddddddddddddddddddddddddddddffffffdddfffdddeeeedfffffffffffffcccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccffffffdddddddddddddddddddddddddddddddddddddfffffffffddfffdddeeeeefffffffffffffcccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccffffffffddddddddddddddddddddddddddddddddddfffffffffffdfffdddeeeeeefffffffffffffccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccffffffffffdddddddddddddddddddddddddddddffffffffffffffdfffdddddeeeefffffffffffffffccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccfffffffffffdddddddddddddddddddddddddddffffffffdddffffdffffddddeeeeffffffffffffffffffcccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccfffdffffffffdddddddddddddddddddddddffffffffddddddfffdffffdddddeeefffffffffffffffffffffccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccffffddfffffffddddddddddddddddddddffffffffddddddddddddffffdddddeeeeffffffffffffffffffffccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccffffddddffffffdddddddddddddddddfffffffffffffddddddddddfffeeeedeeeeffffffffffffffffffffccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccffffdddddffffffffffddddddddddddffffffffffffffffffdddddfffeeeeeeeeeffffffffffffffffffffccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccfffddddddffffffffffffdddddddddffffffffffffffffffffdddfffeeeeeeeeeffffffffffffffffffffccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccfffdddfffffffffffffffdddddddddfffffff11177777fffffdddfffeeeeeeeeefffffffffffffffffffcccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccfffddffffff7777ffffffdddddddddfffff11111777777fffffddfffdddddeeeefffffffffffffffffffcccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccfffddffffff7777ffffffddddddddfffff1111117777771ffffddfffddddeeeedffffff55555fffffffccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccfffffffff1777771fffffddddddddffff111111177777711fffddffffdddeeeedffff5555555555fffcccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccffffffff11777771fffffddddddddffff11111117777771ffffddffffdddeeeddfff5555555555555ccccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccffffff111777771fffffddddddddffff11111117777771ffffddffffdddeeeddff555555f55555555cccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccccccccccccccccffffff11177771ffffffddddddddfffffff1111777777fffffdddfffddeeeedff55555fffff555555cccccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccffffccccccccccfffffff1111fffffffffddddddddfffffffffff17777fffffddddfffddeeeed555555fffffffc55555ccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccffffffcccccccccffffffffffffffffffffdddddddddfffffffffffffffffffdddddfffddeeed555555ffffffffcc5555ccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccffffffffcccccccffffffffffffffffffffddddddddddddfffffffffffffffddddddfffdddddd55555ffffffffffcc5555cccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffddffffddddddddddddddddfffffffffddddddddfffdddddd555ffffffffffffcc55555ccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccffffffffffffffffffffdddddddddddffffddddddddddddddddddddddddddddddddddffffddddfffffffffffffffffcc5555ccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff888ffffffffffffffddddddddddffffffffffffdddddddddddddddddddddddffffffffdddfffffffffffffffffffff555ccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff8888888888888ffffddddddddddffffffffffffdddddddddddddddddddddddffffffffffffffffffffffffffffffff5555cccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff8888ffffffffffffdddddddddddffffffffffffdddddddddddddddddddddddffffffffffffffffffffffffffffffff5555cccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff88ffffffffffffffdddddddddddffffdddddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffff5555ccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff88ffffffffffffffdddddddddddddddddddddddddddddddddddddddddddddddffff888888888888888888888888888f5555ccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff88fffff11111ffffdddddddddddddddddddddddddfffffffddddddddddddddddfff8888888888888888888888888888f5555cccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff88ffff1111111ffffdddddddddddffffffffdddfffddddddffddddddddddddddfff888888888888888888888888888885555cccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff888ffff111111ffffddddddddddffdddddddfffddddddddddfddddddddddddddfff888888888888888888888888888885555cccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccfff888fffff111111fffddddddddddfdddddddddddddddddddddddddddddddddddddff888888888888888888888888888855555cccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccffff888ffff111111fffddddddddddddddddddddddddddddddddddddddddddddddddff88888888888888888888888888855555ccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccffff888fffff11111ffffdddddddddddddddddddddddffddddddddddddddddddddddff8888888888888888888855588885555fccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccfff8888fffff1111ffffddddddddddddddfffddddfffdddddddddddddddddddddddff8888888888888888888855558555555cccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccfff88888ffff11111fffddddddddddddddddffffffdddddddddddddddddddddddddff888888888885558888885555555555fcccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccffff88888fff11111fffdddddddddddddddddddddddddddddddddddddddddddddffff88888888888555588888555555555ffcccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccffff88888fff11111fffddddddddddddddddddddddddddddddddddddddddddfffffff888888888885555588555555555fffccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccffff8888fff11111ffffddddddddddddfffffffffffffffffffffdddfffffffffff88888888888855555555555555555ffccccccccccccccccccccccccccc
+cccccccccccccccccccccccccccccccccccffff8888ffff1111ffffffddddddfffffffffffffffffffffffffffffffffffff88888888888888855555555558555555cccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccffffffffffffff888ffff1111fffffffffdddffffffffffffffffffffffffffffffffffff88888888888888888855555588885555555cccccccccccccccccccccccccc
+ccccccccccccccccccccccccccffffffffffffff8888fff11111fffffffffffffffffeeeeeeeeeeeeeeeefffffffffdffff888888888888888888888888888ff5555555ccccccccccccccccccccccccc
+ccccccccccccccccccccccccccffffffffffffff888ffff11111111fffffffffffffeeeeeeeeeeeeefffffffffffdddffff888888888888888888888888888ffff55555555555555cccccccccccccccc
+ccccccccccccccccccccccccccffff888888fffffffffff1111111111fffffffffffffffeeeeefffffffffffffdddddffff888888888888888888888888888fffcc5555555555555555555cccccccccc
+ccccccccccccccccccccccccccffff8888fffffffffffff1111111111111ddffffffffffffffffffffffffffddddddddfff888888888888888888888888888fffcc555555555555555555555cccccccc
+cccccccccccccccccccccccccccfff8888fffffffffff11111111111111111111ffffffffffffffffffdddddddddddddfffff8888888888888888888888888fffcc555555ccccc55555555555ccccccc
+cccccccccccccccccccccccccccfff8888fffff1111111111111111111111111fffdddffffffffffdddddddddddddddddfffff88888888888888888888888ffffcc5555ccccccccccccc555555cccccc
+cccccccccccccccccccccccccccffff888fffff1111111111111111111111111fffddddddddddddddddddddddddddddddddffff8888888888888888888888ffffccc555cccccccccccccc55555cccccc
+cccccccccccccccccccccccccccffff8888ffff1111111111111111111111111fffddddddddddddddddddddddddddddddddfffff888888888888888888888fffcccc555ccccccccccccccc55555ccccc
+cccccccccccccccccccccccccccfffff888ffff1111111111111111111111111fffdddddddddddddddddddddddddddddddddfffff88888888888888888888fffcccc555cccccccccccccccc5555ccccc
+ccccccccccccccccccccccccccccffff8888ffff111111111111111111111111ffffddddddddddddddddddddddddddddddddfffffff888888888888888888fffcccc555ccccccccccccccccc555ccccc
+cccccccccccccccccccccccccccccfff8888ffff111111111111111111111111ffffddddddddddddddddddddddddddddddddfffffff888888888888888888fffcccc555ccccccccccccccccc555ccccc
+cccccccccccccccccccccccccccccffff8888ffff11111111111111111111111ffffddddddddddddddddddddddddddddddddfffffff888888888888888888fffcccc555ccccccccccccc555c555ccccc
+cccccccccccccccccccccccccccccffff8888ffff1111111111111111111111fffffddddddddddddddddddddddddddddddddffffffff8888888888888888ffffcccc555ccccccccccccc5555555ccccc
+cccccccccccccccccccccccccccccffff88888fff1111111111111111111111fffffddddddddddddddddddddddddddddddddfffffffff888888888888888ffffcccc5555cccccccccccc5555555ccccc
+ccccccccccccccccccccccccccccccffff8888ffff11111111111111111111ffffffddddddddddddddddddddddddddddddddddfffffff888888888888888ffffcccc5555cccccccccccc5555555ccccc
+ccccccccccccccccccccccccccccccffff8888ffff111111111111111111ffffdddddddddddddddddddddddddddddddddddddddfffff8888888888888888fffccccc555555ccccccccc555555555cccc
+ccccccccccccccccccccccccccccccffff88888ffff11111111111111111fffddddddddddddddddddddddddddddddddddddddddffff88888888888888888ffffccccc5555555ccccccc55555555555cc
+cccccccccccccccccccccccccccccccfff88888ffff11111111111111111ffffddddddddddddddddddddddddddddddddddddddfffff88888888888888888ffffffccc555555555ccc555555cc555555c
+cccccccccccccccccccccccccccccccffff88888ffff1111111111111111ffffdddddddddddddddddddddddddddddddddddddffffff8888888888888888ffffffffff..555555555555555cccc555555
+cccccccccccccccccccccccccccccccffff88888ffff1111111111111111fffffdddddddddddddddddddddddddddddddddfffffffff8888888888888888888ffffffffff..55555555555cccccc55555
+cccccccccccccccccccccccccccccccffff88888ffff1111111111111111fffffddddddddddddddddddddddddfffffffffffffffffff88888888888888888888ffffffffffcc5555555ccccccccc5555
+ccccccccccccccccccccccccccccccffffff88888ffff111111111111111ffffffdddddddddddddddddddddfffffffffffffffffffff88888888888888888888888ffffffffccccccccccccccccccccc
+ccccccccccccccccccccccccccccfffffff88ffffffff111111111111111fffffffddddddddddddddddddfffffffffffffffaaaaafff88888888888888888888888888ffffffcccccccccccccccccccc
+cccccccccccccccccccccccccccfffffff8ffffffffff111111111111111ffffffffddddddddddddddfffffffffaaaaaaaaaaaaaafff8888888888888888888888888888fffffccccccccccccccccccc
+ccccccccccccccccccccccccccffffff888fffffffff1111111111111111ffffffffffddddddddffffffffffffaaaaaaaaaaaaaaafff8888888888888888888888888888ffffffcccccccccccccccccc
+cccccccccccccccccccccccccffffff8888fffff11111111111111111111fffafffffffffdffffffffffffffaaaaaaaaaaaaaaaaafff88888888888888888888888888888fffffffcccccccccccccccc
+ccccccccccccccccccccccccfffff888888ffff111111111111111111111fffaafffffffffffffffffffaaaaaaaaaaaaaaaaaaaaafff888888888888888888888888888888fffffffccccccccccccccc
+cccccccccccccccccccccccfffff8888888fffff1111111111111111111ffffaaaafffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaffff888888888888888888888888888888ffffffffccccccccccccc
+cccccccccccccccccccccffffff888888888fffff111111111111111111ffffaaaaaaaafffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffff888888888888888888888888888888888fffffffccccccccccc
+ccccccccccccccccccccffffff88888888888ffff111111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff8888888888888888888888888888888888fffffffcccccccccc
+cccccccccccccccccccffffff888888888888ffff111111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff888888888888888888888888888888888888ffffffccccccccc
+ccccccccccccccccccfffff888888888888888ffff11111111111111111ffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff88888888888888888888888888888888888888fffffcccccccc
+ccccccccccccccccffffff8888888888888888ffff11111111111111111ffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff888888888888888888888888888888888888888ffffffcccccc
+cccccccccccccccfffffff88888888888888888fff111111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff8888888888888888888888888888888888888888ffffffccccc
+ccccccccccccccffffff8888888888888888888fff111111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff88888888888888888888888888888888888888888fffffccccc
+cccccccccccccfffff888888888888888888888ffff11111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff888888888888888888888888888888888888888888fff8888cc
+cccccccccccccfffff888888888888888888888ffff11111111111111111fffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafff8888888888888888888888888888888888888888888888888cc
+`</field></shadow></value><next><block type="variables_set" id="SD,kvdZ[OzlYQ+d%(k!;"><field name="VAR" id="%RvY!p}onn-X(0tp|US:">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="euuiP?BuoDpPlb=53}Op"><value name="img"><shadow type="screen_image_picker" id="CZ)hod?!|S%=FpHqxL2v"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . 5 f f 5 5 f f f f f f f . 
+. . . 5 f f 5 5 f 5 5 f f f . . 
+. f f 5 5 5 5 5 5 5 5 f f f f . 
+. f f f f f f f f 5 5 f f f . . 
+. . . f f f d d f f f f f f f . 
+. . . f d f d d f d f d f f . . 
+. . . f 1 7 d d 7 1 f d f f f . 
+. . . f d d f d d d f f f f . . 
+. . . . f d f f d d d f f f f . 
+. . . . f d d d d d d f f f . . 
+. . . . f d d d f f d d f . . . 
+. . . . f f f f f f f f . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="x6=9r}i!6Gq:J975J@[h"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="XE`ar^OgSzjy4+pv=./h"><field name="VAR" id="lK3f+?U[q=)9CV-8SfZV">Fish</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="K5b=pN%XWFt1pSosbSLc"><value name="img"><shadow type="screen_image_picker" id="czxes^{u`sRieI-/8u1/"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . c c c c . . . . 
+. . . . . . c c d d d d c . . . 
+. . . . . c c c c c c d c . . . 
+. . . . c c 4 4 4 4 d c c . . . 
+. . . c 4 d 4 4 4 4 4 1 c . c c 
+. . c 4 4 4 1 4 4 4 4 d 1 c 4 c 
+. c 4 4 4 4 1 4 4 4 4 4 1 c 4 c 
+f 4 4 4 4 4 1 4 4 4 4 4 1 4 4 f 
+f 4 4 4 f 4 1 c c 4 4 4 1 f 4 f 
+f 4 4 4 4 4 1 4 4 f 4 4 d f 4 f 
+. f 4 4 4 4 1 c 4 f 4 d f f f f 
+. . f f 4 d 4 4 f f 4 c f c . . 
+. . . . f f 4 4 4 4 c d b c . . 
+. . . . . . f f f f d d d c . . 
+. . . . . . . . . . c c c . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="}4^_;{J?%G!_)n{|V+#{"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="game_control_sprite" id=";0$MHT9XzCOM9VwkHrT3"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="nP2](E|5Y$~eN/pyX$NE"><field name="VAR" id="%RvY!p}onn-X(0tp|US:">mySprite</field></block></value><value name="vx"><shadow type="math_number" id="VP9Q43fuO)^*P/]Hp#lb"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id=".WP10lBf)NL.h-Fg/zw/"><field name="NUM">100</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="game_control_sprite" id="q-O0bp)*_baD+|~6wTJ/" disabled="true" x="0" y="270"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="o_(rJ,$uRL!N`=HmPP|." disabled="true"><field name="VAR" id="%RvY!p}onn-X(0tp|US:">mySprite</field></block></value></block><block type="spritesoverlap" id="A=HB|^hb:[@4d:6%+heF" x="247" y="345"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="4tqqXubud,:V]9L]8!L("><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="6f3+{3@S[4YP7rlrf,Qb"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="Iw%Dc.^+|GJ}w$;9}do,"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="eGmWJj/s=MlByk7Ja%In"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="gamecountdown" id="]=}mPp^=5`D#HCl|LE4/"><value name="duration"><shadow type="math_number" id="+:cXJ^FO~JF?0/VXue2e"><field name="NUM">10</field></shadow></value><next><block type="hudChangeScoreBy" id="rfG[JQBi^?5XwwH;Ls!I"><value name="value"><shadow type="math_number" id="Q%Deo-_Ex3nReI;d:1ik"><field name="NUM">1</field></shadow></value><next><block type="mixer_play_sound" id="CX2;*hY{uHq~85zFhjZ+"><field name="sound">music.powerUp</field><next><block type="spritesetpos" id="=~Wwz9z%+UUSqU-S_bM4"><value name="sprite"><block type="variables_get" id="C8Z+o#ly#ZQEV1?bveYp"><field name="VAR" id="lK3f+?U[q=)9CV-8SfZV">Fish</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="cq-6cG`[r^JP[i:Y}Qk0"><value name="min"><shadow type="math_number" id=",1_A.65{}ol?5.jp^f8j"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="^kkj~5P@E9fkP#S-vDEX"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="EJ$).*BPXOyW4[VfhAs/"><value name="min"><shadow type="math_number" id=":MNPRQ[lvJ^%XiNzKHFL"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="4sQzqn-(?)L^6%Yo^rzi"><field name="NUM">120</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block></xml>
